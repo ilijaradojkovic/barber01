@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+
+#root {
+  width: 100%;
+  
+  padding: 0;
+  margin: 0;
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-optical-sizing: auto;
+  font-style: normal;
+
+}
+
+@theme {
+
+  --color-primary: #CC8B52;
+  --color-primary-light:#C38650;
+  --color-primary-100:#EBE1CC;
+  --color-background: #1D1B1C;
+}
