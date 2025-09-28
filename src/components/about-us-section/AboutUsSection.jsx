@@ -1,87 +1,32 @@
-import React from 'react'
-import Carousel from 'react-multi-carousel'
 
-const responsive = {
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 4,
-    slidesToSlide: 4 // optional, default to 1.
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 768 },
-    items: 3,
-    slidesToSlide: 3 // optional, default to 1.
-  },
-  mobile: {
-    breakpoint: { max: 767, min: 464 },
-    items: 2,
-    slidesToSlide: 1 // optional, default to 1.
-  }
-};
-const sliderImageUrl = [
-  //First image url
-  {
-    url:
-      "https://i2.wp.com/www.geeksaresexy.net/wp-content/uploads/2020/04/movie1.jpg?resize=600%2C892&ssl=1"
-  },
-  {
-    url:
-      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-kids-movies-2020-call-of-the-wild-1579042974.jpg?crop=0.9760858955588091xw:1xh;center,top&resize=480:*"
-  },
-  //Second image url
-  {
-    url:
-      "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/best-movies-for-kids-2020-sonic-the-hedgehog-1571173983.jpg?crop=0.9871668311944719xw:1xh;center,top&resize=480:*"
-  },
-  //Third image url
-  {
-    url:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQS82ET2bq9oTNwPOL8gqyoLoLfeqJJJWJmKQ&usqp=CAU"
-  },
 
-  //Fourth image url
+import React from "react";
+import Carousel from "./CauroselCustom";
 
-  {
-    url:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTdvuww0JDC7nFRxiFL6yFiAxRJgM-1tvJTxA&usqp=CAU"
-  }
-];
+
+
 export default function AboutUsSection() {
+
     return (
-        <div className=' h-screen bg-primary-100 flex'>
-            <div className='flex-1 flex flex-col gap-10 bg-amber-700'>
+        <div className="h-screen flex">
+            {/* Leva strana */}
+            <div className="w-1/3 flex flex-col gap-6 p-8 bg-amber-700">
+                <span className="text-xl font-bold">Our Story</span>
+                <span className="uppercase text-2xl font-bold">Discover Works of Our Barbers</span>
                 <span>
-                    Our Story
-                </span>
-                <span className='uppercase'>
-                    Discover Works of Our Barbers
-                </span>
-                <span>
-                    Our talented stylists blend tradition with innovation, using <br /> premium products and advanced techniques to deliver cutting<br />-edge styles.
+                    Our talented stylists blend tradition with innovation, using <br />
+                    premium products and advanced techniques to deliver cutting-edge styles.
                 </span>
             </div>
 
-            <div className='flex-2 flex w-full'>
+            {/* Desna strana */}
+              <div className="w-2/3 mx-auto h-full py-10 "> {/* centriran container */}
 
-                <Carousel
-                    responsive={responsive}
-                    autoPlay={true}
-                    swipeable={true}
-                    draggable={true}
-                    showDots={true}
-                    infinite={true}
-                    partialVisible={false}
-                    dotListClass="custom-dot-list-style"
-                >
-                    {sliderImageUrl.map((imageUrl, index) => {
-                        return (
-                            <div className="slider" key={index}>
-                                <img src={imageUrl.url} alt="movie" />
-                            </div>
-                        );
-                    })}
-                </Carousel>
-            </div>
+                <Carousel />
+           </div>
+
+
         </div>
-    )
+    );
 }
+
