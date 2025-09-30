@@ -42,7 +42,7 @@ const data = [
 
 export default function EmployeeSection() {
   return (
-    <div className="h-[120vh] bg-white flex pt-30 relative overflow-hidden lg:pt-10">
+    <div className="h-[120vh] bg-white flex xl:pt-30 relative overflow-hidden lg:pt-10">
       {/* Pozadinska slika */}
       <motion.img
         src="./images/img1.jpg"

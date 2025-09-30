@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function AboutUsSection() {
   return (
-    <div className="h-screen flex bg-primary-100 pt-30 ps-10 overflow-hidden lg:pt-10">
+    <div className="h-screen flex bg-primary-100 ps-10 overflow-hidden xl:pt-30  lg:pt-10">
       {/* Leva strana */}
       <motion.div
         className="w-1/3 flex flex-col gap-6 p-8"

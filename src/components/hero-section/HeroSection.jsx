@@ -13,7 +13,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
         >
           <motion.span
-            className="text-2xl text-primary uppercase tracking-wider lg:text-lg"
+            className="xl:text-2xl text-primary uppercase tracking-wider lg:text-lg "
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
@@ -22,7 +22,7 @@ export default function HeroSection() {
           </motion.span>
 
           <motion.h1
-            className="text-8xl font-bold leading-tight uppercase lg:text-6xl"
+            className="xl:text-8xl font-bold leading-tight uppercase lg:text-6xl"
             initial={{ opacity: 0, x: -100 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
@@ -31,7 +31,7 @@ export default function HeroSection() {
           </motion.h1>
 
           <motion.span
-            className="opacity-50 mt-4 text-2xl border-l-4 text-start border-l-primary px-3 py-1 normal-case  lg:text-lg"
+            className="opacity-50 mt-4 xl:text-2xl border-l-4 text-start border-l-primary px-3 py-1 normal-case  lg:text-lg"
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.7, duration: 0.6 }}
@@ -40,7 +40,7 @@ export default function HeroSection() {
           </motion.span>
 
           <motion.button
-            className="mt-6 bg-primary-light text-2xl text-black uppercase px-6 py-3 w-max cursor-pointer hover:bg-orange-500 transition-colors  lg:text-lg"
+            className="mt-6 bg-primary-light xl:text-2xl text-black uppercase px-6 py-3 w-max cursor-pointer hover:bg-orange-500 transition-colors  lg:text-lg"
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1, duration: 0.6 }}
@@ -59,7 +59,7 @@ export default function HeroSection() {
               {["F", "X", "I"].map((icon, i) => (
                 <motion.div
                   key={icon}
-                  className="w-15 h-15 bg-gray-600 rounded-full flex items-center text-xl justify-center hover:bg-gray-500 cursor-pointer lg:w-10 lg:h-10"
+                  className="xl:w-15 xl:h-15 bg-gray-600 rounded-full flex items-center text-xl justify-center hover:bg-gray-500 cursor-pointer lg:w-10 lg:h-10"
                   initial={{ opacity: 0, scale: 0 }}
                   animate={{ opacity: 1, scale: 1 }}
                   transition={{ delay: 1.5 + i * 0.2, duration: 0.5 }}
@@ -68,7 +68,7 @@ export default function HeroSection() {
                 </motion.div>
               ))}
             </div>
-            <span className="text-primary font-bold text-6xl lg:text-4xl">
+            <span className="text-primary font-bold xl:text-6xl lg:text-4xl">
               (325) 641-8294
             </span>
           </motion.div>
@@ -77,13 +77,13 @@ export default function HeroSection() {
 
       {/* Desna strana - slika */}
       <motion.div
-        className="flex-1 flex justify-start h-full lg:justify-end lg:items-end"
+        className="flex-1 flex xl:justify-start xl:items-end lg:justify-end lg:items-end"
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ delay: 0.8, duration: 0.8 }}
       >
         <img
-          className="w-auto transform scale-108 mt-10 lg:scale-100 "
+          className="w-auto transform xl:scale-76 mt-10 lg:scale-100 "
           src="./hero01.png"
           alt="Barber"
         />
