@@ -12,11 +12,11 @@ export default function Navbar() {
                 />        </div>
 
             <div className='flex-1 flex justify-center gap-8 items-center text-xl'>
-                <span className='font-bold text-white hover:text-primary cursor-pointer transition-colors duration-300 text-2xl'>ABOUT US</span>
-                <span className='font-bold text-white hover:text-primary cursor-pointer transition-colors duration-300 text-2xl'>OUR SERVICES</span>
-                <span className='font-bold text-white hover:text-primary cursor-pointer transition-colors duration-300 text-2xl'>CONTACT US</span>
+                <span className='font-bold text-white hover:text-primary cursor-pointer transition-colors duration-300 text-2xl lg:text-lg'>ABOUT US</span>
+                <span className='font-bold text-white hover:text-primary cursor-pointer transition-colors duration-300 text-2xl lg:text-lg'>OUR SERVICES</span>
+                <span className='font-bold text-white hover:text-primary cursor-pointer transition-colors duration-300 text-2xl lg:text-lg'>CONTACT US</span>
 
-                <button className="border border-white cursor-pointer text-white py-2 px-4 text-2xl hover:bg-primary hover:text-black hover:border-black transition-colors duration-300">
+                <button className="border border-white cursor-pointer text-white py-2 px-4 text-2xl hover:bg-primary hover:text-black hover:border-black transition-colors duration-300 lg:text-lg">
                     REZERVISI
                 </button>
             </div>
