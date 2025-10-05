@@ -42,11 +42,15 @@ const data = [
 
 export default function EmployeeSection() {
   return (
-    <div className="h-[120vh] bg-white flex xl:pt-30 relative overflow-hidden lg:pt-10">
+    <div className=" bg-white   flex relative overflow-hidden 
+    xl:pt-30  xl:flex-row
+    lg:flex-col lg:h-[120vh]
+    sm:pt-10 sm:flex-col sm:gap-5 sm:h-[180vh]
+    ">
       {/* Pozadinska slika */}
       <motion.img
         src="./images/img1.jpg"
-        className="bottom-0 left-10 absolute"
+        className="bottom-0 left-10 absolute lg:block sm:hidden"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -55,15 +59,30 @@ export default function EmployeeSection() {
 
       {/* Leva strana - tekst */}
       <motion.div
-        className="flex-1 flex justify-start items-start flex-col gap-3 pl-15"
+        className="flex flex-col gap-3 pl-15 
+      
+       lg:w-full lg:justify-center lg:items-center
+       xl:justify-start xl:w-[25%]  xl:items-start
+       
+       "
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <span className="text-2xl uppercase text-primary">Our Barbers</span>
-        <span className="text-6xl uppercase">Meet Our Experts</span>
-        <span className="text-2xl">
+        <span className="text-2xl uppercase text-primary 
+        md:text-xl
+        sm:text-lg
+        ">Our Barbers</span>
+        <span className="text-6xl uppercase
+         md:text-4xl
+         sm:text-3xl
+        ">Meet Our Experts</span>
+        <span className="text-2xl 
+        
+         md:text-xl
+         sm:text-lg
+         ">
           Our talented stylists blend tradition with innovation, using premium
           products and advanced techniques to deliver cutting-edge styles.
         </span>
@@ -71,7 +90,10 @@ export default function EmployeeSection() {
 
       {/* Desna strana - kartice */}
       <motion.div
-        className="flex-2 flex justify-center items-start gap-x-10 flex-wrap gap-y-0"
+        className="flex-1 flex  gap-x-10 flex-wrap gap-y-0
+        xl:w-[75%] 
+        sm:w-full sm:justify-center sm:items-center 
+        "
         initial="hidden"
         whileInView="visible"
         variants={{

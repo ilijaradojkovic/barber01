@@ -32,10 +32,21 @@ const data = [
 
 export default function PricesSection() {
   return (
-    <div className="h-screen flex relative bg-primary-100 gap-10 overflow-hidden">
+    <div
+      className="min-h-screen flex flex-col relative bg-primary-100  overflow-visible
+      lg:flex-row lg:items-center lg:justify-center lg:h-screen lg:gap-10
+      sm:gap-0
+      
+      "
+    >
+      {/* Ukrasna slika (makaze) */}
       <motion.img
-        className="absolute -top-60 w-sm z-10 xl:-top-10 xl:left-0 xl:w-xs lg:-top-15 lg:w-2xs"
+        className="absolute -top-40 left-0 w-40 z-10
+        md:-top-12 md:w-52
+        lg:-top-16 lg:w-64
+        xl:-top-50 xl:left-10 xl:w-72"
         src="./images/scissors.png"
+        alt="Scissors"
         initial={{ opacity: 0, y: -100 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -44,28 +55,33 @@ export default function PricesSection() {
 
       {/* Leva strana - slika */}
       <motion.div
-        className="flex-1 flex justify-end items-center"
+        className="flex justify-center items-center w-full lg:w-1/2"
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
         <img
-          className="rounded-2xl h-[80%] w-[60%] lg:w-[70%]"
+          className="rounded-2xl w-[80%] rotate-90
+          lg:rotate-0 lg:w-[60%]
+          md:w-[50%]   md:rotate-90 "
           src="./images/prices.jpg"
           alt="Prices"
         />
       </motion.div>
 
-      {/* Desna strana - tekst */}
+      {/* Desna strana - tekst i cene */}
       <motion.div
-        className="flex-1 flex justify-start items-center"
+        className="flex justify-center items-center w-full   text-black py-10 
+        lg:py-0 lg:w-1/2 
+        sm:py-0
+        "
         initial={{ opacity: 0, x: 100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <div className="w-[80%] h-[80%] flex flex-col gap-3">
+        <div className="w-[85%] flex flex-col gap-6">
           <motion.span
             className="uppercase text-2xl font-bold text-primary"
             initial={{ opacity: 0, y: -20 }}
@@ -76,7 +92,7 @@ export default function PricesSection() {
           </motion.span>
 
           <motion.span
-            className="uppercase text-6xl font-bold"
+            className="uppercase text-5xl md:text-6xl font-bold"
             initial={{ opacity: 0, y: -40 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
@@ -84,7 +100,7 @@ export default function PricesSection() {
             Quality Cuts at Honest Prices
           </motion.span>
 
-          {/* Lista sa stagger animacijom */}
+          {/* Lista usluga */}
           <motion.div
             className="flex flex-col gap-10 mt-10 w-full"
             initial="hidden"
@@ -100,7 +116,7 @@ export default function PricesSection() {
             {data.map((ele, i) => (
               <motion.div
                 key={i}
-                className="flex flex-col gap-3 border-b-2 border-black/50 items-start w-full"
+                className="flex flex-col gap-3 border-b-2 border-black/50 items-start w-full pb-3"
                 variants={{
                   hidden: { opacity: 0, y: 40 },
                   visible: { opacity: 1, y: 0 },
@@ -108,10 +124,10 @@ export default function PricesSection() {
                 transition={{ duration: 0.6 }}
               >
                 <div className="flex justify-between gap-3 w-full">
-                  <span className="text-3xl">{ele.service}</span>
-                  <span className="text-3xl">{ele.price}$</span>
+                  <span className="text-2xl md:text-3xl">{ele.service}</span>
+                  <span className="text-2xl md:text-3xl">{ele.price}$</span>
                 </div>
-                <span className="text-xl">{ele.description}</span>
+                <span className="text-lg md:text-xl">{ele.description}</span>
               </motion.div>
             ))}
           </motion.div>
