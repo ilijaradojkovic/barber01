@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 export default function SectionLocation() {
   return (
-    <div
+    <div id="contact"
       className=" bg-primary-100 flex justify-center items-center gap-8 overflow-hidden
     flex-col h-[130vh] px-10 py-10
     lg:flex-row lg:h-[70vh]

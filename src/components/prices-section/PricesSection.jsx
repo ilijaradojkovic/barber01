@@ -31,7 +31,7 @@ const data = [
 
 export default function PricesSection() {
   return (
-    <div
+    <div id="prices"
       className="min-h-screen flex flex-col relative bg-primary-100  overflow-visible
       lg:flex-row lg:items-center lg:justify-center lg:h-screen lg:gap-10
       sm:gap-0

@@ -20,12 +20,12 @@ export default function ReservationSection() {
   };
 
   return (
-    <div className="flex flex-col justify-center items-center h-[95vh] bg-background
+    <div id="reserve" className="flex flex-col justify-center items-center h-[95vh] bg-background
     md:flex-row
     sm:flex-col sm:py-5 
     ">
       {/* Slika sa overlay-em */}
-      <motion.div
+      <motion.div 
         className="overflow-hidden rounded-xl relative"
         initial={{ opacity: 0, x: -80 }}
         animate={{ opacity: 1, x: 0 }}

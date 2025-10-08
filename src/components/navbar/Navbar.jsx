@@ -35,17 +35,9 @@ export default function Navbar() {
                 
                 "
         >
-                O NAMA
+               <a href="#about" > O NAMA </a>
         </span>
-        <span
-          className="font-bold text-white hover:text-primary cursor-pointer transition-colors duration-300 
-                xl:text-2xl 
-                lg:text-lg
-                
-                "
-        >
-          {t("menu.services")}
-        </span>
+
         <span
           className="font-bold text-white hover:text-primary cursor-pointer transition-colors duration-300
                  xl:text-2xl 
@@ -53,7 +45,7 @@ export default function Navbar() {
               
                  "
         >
-          NAŠE USLUGE
+        <a href="#prices" >NAŠE USLUGE</a>  
         </span>
           <span
           className="font-bold text-white hover:text-primary cursor-pointer transition-colors duration-300
@@ -62,9 +54,10 @@ export default function Navbar() {
               
                  "
         >
-          KONTAKT
+        <a href="#contact" >  KONTAKT</a>
         </span>
         <button
+       
           className="border border-white cursor-pointer text-white py-2 px-4  hover:bg-primary hover:text-black hover:border-black transition-colors duration-300 
                 xl:text-2xl
                 lg:text-lg
@@ -72,7 +65,7 @@ export default function Navbar() {
 
                 "
         >
-          REZERVIŠI
+         <a href="#reserve" > REZERVIŠI </a>
         </button>
        
       </div>

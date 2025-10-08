@@ -83,7 +83,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1, duration: 0.6 }}
           >
-            Pošalji zahtev &rarr;
+            <a href="#reserve" > Pošalji zahtev &rarr; </a>
           </motion.button>
 
           {/* Ikone i telefon */}

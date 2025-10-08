@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function AboutUsSection() {
   return (
-    <div className="h-screen flex-col items-center flex bg-primary-100 px-5  overflow-hidden    
+    <div id="about" className="h-screen flex-col items-center flex bg-primary-100 px-5  overflow-hidden    
      xl:flex-row xl:justify-start xl:items-start 
      lg:pt-10
     sm:flex-col sm:justify-center sm:items-center sm:pt-30
