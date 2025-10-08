@@ -10,6 +10,7 @@ import EmployeeSection from './components/employee-section/EmployeeSection'
 import SectionLocation from './components/section-location/SectionLocation'
 import ReservationSection from './components/reserve-section/ReservationSection'
 import FooterSection from './components/footer-section/FooterSection'
+import "./config/i18n"; // import i18n konfiguracije
 
 function App() {
   const [count, setCount] = useState(0)

@@ -11,46 +11,48 @@ import { motion } from "framer-motion";
 export default function SectionLocation() {
   return (
     <div
-      className=" bg-primary-100 flex justify-center items-center px-30 py-10 gap-8 overflow-hidden
+      className=" bg-primary-100 flex justify-center items-center gap-8 overflow-hidden
+    flex-col h-[130vh] px-10 py-10
     lg:flex-row lg:h-[70vh]
     md:h-screen
-    sm:flex-col sm:h-[130vh]
+    sm:flex-col sm:h-[130vh] sm:px-30 sm:py-10 
     "
     >
       {/* Leva strana */}
       <motion.div
-        className="flex flex-1 flex-col justify-center items-start gap-5"
+        className="flex flex-1 flex-col justify-center items-center gap-5 
+        sm:items-start
+        "
         initial={{ opacity: 0, x: -100 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
         <span
-          className="text-2xl uppercase text-primary 
+          className="text-xl uppercase text-primary text-center
         lg:text-xl
-        md:text-lg
-        
+        md:text-lg md:text-left
         "
         >
-          Find Us
+          Pronađite nas
         </span>
         <span
-          className="text-6xl uppercase
+          className="text-3xl uppercase text-center
         lg:text-4xl
-        md:text-3xl
+        md:text-3xl md:text-left
         "
         >
-          Where Every Detail Matters
+          Gde svaki detalj znači
         </span>
         <span
-          className="text-2xl 
+          className="text-lg text-center font-inter
         lg:text-xl
-        md:text-lg
+        md:text-lg md:text-left
         "
         >
-          Our friendly experts are committed to delivering tailored styles that
-          match your unique vibe, all within a warm and inviting atmosphere that
-          makes you feel at home.
+          Naši ljubazni stručnjaci posvećeni su kreiranju stilova prilagođenih
+          vašem jedinstvenom izgledu, u toploj i prijatnoj atmosferi koja vas
+          čini kao kod kuće.
         </span>
         <motion.button
           className="bg-primary text-black text-xl uppercase px-6 py-4
@@ -58,13 +60,14 @@ export default function SectionLocation() {
           "
           whileHover={{ scale: 1.05, backgroundColor: "#f97316" }} // hover efekt
         >
-          Submit Request
+          Pošalji zahtev
         </motion.button>
       </motion.div>
 
       {/* Mapa */}
       <motion.div
         className="flex-2 h-full 
+         w-full 
          sm:w-full
          "
         initial={{ opacity: 0, scale: 0.9 }}
@@ -78,6 +81,7 @@ export default function SectionLocation() {
       {/* Desna strana */}
       <motion.div
         className="flex-1  flex
+        flex-col items-center 
         lg:flex-col lg:items-start 
         md:flex-row md:items-center md:justify-start md:gap-10
         sm:flex-col sm:items-center sm:gap-5
@@ -121,7 +125,7 @@ export default function SectionLocation() {
               sm:text-xl
              "
             >
-              Phone Number
+              Lokacija
             </span>
             <span
               className="text-xl
@@ -167,7 +171,7 @@ export default function SectionLocation() {
                sm:text-xl
              "
             >
-              Phone Number
+              Telefon
             </span>
             <span
               className="text-xl
@@ -213,7 +217,7 @@ export default function SectionLocation() {
                sm:text-xl
              "
             >
-              Phone Number
+              WhatsApp
             </span>
             <span
               className="text-xl

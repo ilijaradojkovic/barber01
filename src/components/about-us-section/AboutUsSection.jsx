@@ -4,8 +4,9 @@ import { motion } from "framer-motion";
 
 export default function AboutUsSection() {
   return (
-    <div className="h-screen flex bg-primary-100 ps-10 overflow-hidden   lg:pt-10 
+    <div className="h-screen flex-col items-center flex bg-primary-100 px-5  overflow-hidden    
      xl:flex-row xl:justify-start xl:items-start 
+     lg:pt-10
     sm:flex-col sm:justify-center sm:items-center sm:pt-30
     ">
       {/* Leva strana */}
@@ -20,8 +21,8 @@ export default function AboutUsSection() {
       >
         <motion.span
           className="font-bold text-primary uppercase
-           
-           lg:text-2xl
+           text-xl
+          lg:text-2xl
           md:text-xl 
           sm:text-xl
            "
@@ -29,11 +30,12 @@ export default function AboutUsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.6 }}
         >
-          Our Story
+          Naša priča
         </motion.span>
 
         <motion.span
           className="uppercase  font-bold 
+          text-3xl
           md:text-4xl 
           lg:text-6xl
           sm:text-3xl
@@ -42,11 +44,12 @@ export default function AboutUsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5, duration: 0.8 }}
         >
-          Discover Works of Our Barbers
+          Otkrij radove naših berbera
         </motion.span>
 
         <motion.span
-          className="font-normal  
+          className="font-normal   font-inter
+          text-lg
           md:text-lg 
           lg:text-xl
           sm:text-xl
@@ -55,15 +58,14 @@ export default function AboutUsSection() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.7, duration: 0.8 }}
         >
-          Our talented stylists blend tradition with innovation, using 
-          premium products and advanced techniques to deliver cutting-edge
-          styles.
+          Naši talentovani stilisti spajaju tradiciju i inovaciju, koristeći vrhunske proizvode i napredne tehnike kako bi pružili moderne i precizne stilove.
         </motion.span>
       </motion.div>
 
       {/* Desna strana - Carousel */}
       <motion.div
         className=" mx-auto h-full py-10 
+        w-full
         md:w-[80%] 
         lg:w-2/3
         sm:w-full"

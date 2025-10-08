@@ -20,7 +20,7 @@ export default function ReservationSection() {
   };
 
   return (
-    <div className="flex justify-center items-center h-[95vh] bg-background
+    <div className="flex flex-col justify-center items-center h-[95vh] bg-background
     md:flex-row
     sm:flex-col sm:py-5 
     ">
@@ -51,9 +51,9 @@ export default function ReservationSection() {
       {/* Forma */}
       <motion.form
         onSubmit={handleSubmit}
-        className="bg-neutral-100 p-8 rounded-br-xl rounded-tr-xl shadow-lg w-full max-w-md
+        className="bg-neutral-100 p-8   shadow-lg w-full max-w-md
        md:rounded-bl-none md:rounded-tl-none
-       sm:rounded-bl-xl sm:rounded-tl-xl
+       sm:rounded-bl-xl sm:rounded-tl-xl sm:rounded-br-xl sm:rounded-tr-xl
         "
         initial={{ opacity: 0, x: 80 }}
         animate={{ opacity: 1, x: 0 }}

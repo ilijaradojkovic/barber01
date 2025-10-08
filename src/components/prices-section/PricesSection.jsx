@@ -3,30 +3,29 @@ import { motion } from "framer-motion";
 
 const data = [
   {
-    service: "Classic Haircut",
-    description: "A timeless cut tailored to your personal style.",
-    price: "25",
+    service: "Klasična frizura",
+    description: "Klasična frizura prilagođena vašem ličnom stilu.",
+    price: "1500",
   },
   {
-    service: "Modern Fades & Tapers",
-    description:
-      "Precision fades, tapers, or undercuts for a fresh, contemporary look.",
-    price: "35",
+    service: "Moderni fade i taper",
+    description: "Precizni fade, taper ili undercut za svež, moderan izgled.",
+    price: "1800",
   },
   {
-    service: "Beard Trimming & Shaping",
-    description: "A timeless cut tailored to your personal style.",
-    price: "25",
+    service: "Uređivanje i oblikovanje brade",
+    description: "Precizno oblikovanje brade za besprekoran i uredan izgled svaki dan.",
+    price: "1000",
   },
   {
-    service: "Hot Towel Shave",
-    description: "A timeless cut tailored to your personal style.",
-    price: "35",
+    service: "Topli peškir brijanje",
+    description: "Tradicionalno brijanje sa toplim peškirom koje pruža glatku kožu i relaksaciju.",
+    price: "1000",
   },
   {
-    service: "Scalp Treatments & Massage",
-    description: "A timeless cut tailored to your personal style.",
-    price: "45",
+    service: "Tretmani i masaža kože glave",
+    description: "Hranljivi tretmani i opuštajuća masaža za zdravu kožu glave i sjajnu kosu.",
+    price: "2500",
   },
 ];
 
@@ -41,7 +40,8 @@ export default function PricesSection() {
     >
       {/* Ukrasna slika (makaze) */}
       <motion.img
-        className="absolute -top-40 left-0 w-40 z-10
+        className="absolute -top-13 left-0 w-40 z-10
+
         md:-top-12 md:w-52
         lg:-top-16 lg:w-64
         xl:-top-50 xl:left-10 xl:w-72"
@@ -88,7 +88,7 @@ export default function PricesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            Our Prices
+            Naše cene
           </motion.span>
 
           <motion.span
@@ -97,7 +97,7 @@ export default function PricesSection() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            Quality Cuts at Honest Prices
+            Kvalitetne frizure po poštenim cenama
           </motion.span>
 
           {/* Lista usluga */}
@@ -125,9 +125,11 @@ export default function PricesSection() {
               >
                 <div className="flex justify-between gap-3 w-full">
                   <span className="text-2xl md:text-3xl">{ele.service}</span>
-                  <span className="text-2xl md:text-3xl">{ele.price}$</span>
+                  <span className="text-2xl md:text-3xl">{ele.price}</span>
                 </div>
-                <span className="text-lg md:text-xl">{ele.description}</span>
+                <span className="text-lg md:text-xl font-inter">
+                  {ele.description}
+                </span>
               </motion.div>
             ))}
           </motion.div>

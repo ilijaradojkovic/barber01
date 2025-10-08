@@ -1,19 +1,26 @@
 import React from "react";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 export default function HeroSection() {
+    const { t } = useTranslation();
+  
   return (
     <div
-      className="h-screen text-white flex flex-col items-center  px-10 overflow-hidden
+      className="h-screen pt-10 text-white flex flex-col items-center  px-10 overflow-hidden
   md:flex-row 
-  sm:pt-0
+  sm:pt-0 
   "
     >
       {/* Leva strana - tekst */}
-      <div className=" flex flex-col justify-center items-center text-center gap-6
-      md:flex-1">
+      <div
+        className=" flex flex-col justify-center items-center text-center gap-6
+
+      md:flex-1
+      "
+      >
         <motion.div
-          className="flex flex-col gap-4
+          className="flex flex-col gap-4 items-center
         lg:items-start 
         md:items-start md:h-full 
         sm:items-center  sm:h-[50vh]
@@ -23,7 +30,7 @@ export default function HeroSection() {
           transition={{ duration: 0.8 }}
         >
           <motion.span
-            className="text-primary uppercase tracking-wider 
+            className="text-primary uppercase tracking-wider text-lg
             xl:text-2xl 
             lg:text-xl
              md:text-xl 
@@ -33,11 +40,11 @@ export default function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.3, duration: 0.6 }}
           >
-            Transform Your Look
+         Doživi umetnost savršenog šišanja
           </motion.span>
 
           <motion.h1
-            className="  font-bold leading-tight uppercase 
+            className="  font-bold leading-tight uppercase text-4xl
             xl:text-8xl
              lg:text-6xl 
              md:text-6xl md:text-start
@@ -48,26 +55,25 @@ export default function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.5, duration: 0.8 }}
           >
-            Experience the <br /> Art of the <br /> Perfect Cut
+            Doživi umetnost savršenog šišanja
           </motion.h1>
 
           <motion.span
-            className="opacity-50 mt-4   text-start  px-3 py-1 normal-case  
+            className="opacity-50 mt-4 font-inter  px-3 py-1 normal-case  text-lg text-center 
             xl:text-2xl 
             lg:text-xl
-             md:text-xl md:border-l-4 md:border-l-primary md:text-start
-             sm:text-lg sm:text-center
+             md:text-xl md:border-l-4 md:border-l-primary md:text-start 
+             sm:text-lg sm:text-center  
             "
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.7, duration: 0.6 }}
           >
-            Step in for a transformative experience that leaves you feeling{" "}
-            <br /> confident and refreshed.
+            Uđi za transformativno iskustvo koje će te učiniti samopouzdanim i osveženim
           </motion.span>
 
           <motion.button
-            className="mt-6 bg-primary-light text-black uppercase px-6 py-3 w-max cursor-pointer hover:bg-orange-500 transition-colors  
+            className="mt-6 bg-primary-light text-xl text-black uppercase px-6 py-3 w-max cursor-pointer hover:bg-orange-500 transition-colors  
              xl:text-2xl
             lg:text-xl 
             md:text-xl
@@ -77,7 +83,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, scale: 1 }}
             transition={{ delay: 1, duration: 0.6 }}
           >
-            Submit Request &rarr;
+            Pošalji zahtev &rarr;
           </motion.button>
 
           {/* Ikone i telefon */}
@@ -91,7 +97,8 @@ export default function HeroSection() {
               {["F", "X", "I"].map((icon, i) => (
                 <motion.div
                   key={icon}
-                  className="xl:w-15 xl:h-15 bg-gray-600 rounded-full flex items-center text-xl justify-center hover:bg-gray-500 cursor-pointer 
+                  className="w-10 h-10 bg-gray-600 rounded-full flex items-center text-xl justify-center hover:bg-gray-500 cursor-pointer 
+                  xl:w-15 xl:h-15
                   lg:w-10 lg:h-10 
                   md:w-10 md:h-10
                   sm:w-7 sm:h-7
@@ -105,7 +112,7 @@ export default function HeroSection() {
               ))}
             </div>
             <span
-              className="text-primary font-bold 
+              className="text-primary font-bold text-2xl
             xl:text-6xl 
             lg:text-4xl
              md:text-4xl

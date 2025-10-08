@@ -1,0 +1,15 @@
+{
+  "menu": {
+    "about": "O NAMA",
+    "services": "NAŠE USLUGE",
+    "contact": "KONTAKT",
+    "book": "REZERVIŠI"
+  },
+
+  "hero": {
+    "subtitle": "Doživi umetnost savršenog šišanja",
+    "title": "Doživi umetnost savršenog šišanja",
+    "description": "Uđi za transformativno iskustvo koje će te učiniti samopouzdanim i osveženim",
+    "cta": "Pošalji zahtev"
+  }
+}

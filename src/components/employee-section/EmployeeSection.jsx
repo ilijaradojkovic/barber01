@@ -4,53 +4,45 @@ import { motion } from "framer-motion";
 const data = [
   {
     id: 1,
-    name: "John Thompson",
-    title: "Head Barber",
+    name: "Jovan Kivic",
+    title: "Glavni Frizer",
     img: "./images/barber1.png",
   },
   {
     id: 2,
-    name: "Michael Adams",
-    title: "Head Barber",
+    name: "Milan Aleksic",
+    title: "Senior Frizer",
     img: "./images/barber2.png",
   },
   {
     id: 3,
-    name: "Ryan Martinez",
-    title: "Senior Barber",
-    img: "./images/barber3.png",
-  },
-  {
-    id: 4,
-    name: "Alex Johnson",
-    title: "Senior Barber",
+    name: "Aleksa Jankovic",
+    title: "Senior Frizer",
     img: "./images/barber4.png",
   },
   {
-    id: 5,
-    name: "Steven Le",
-    title: "Senior Barber",
+    id: 4,
+    name: "Stefan Miljkovic",
+    title: "Senior Frizer",
     img: "./images/barber5.png",
   },
-  {
-    id: 6,
-    name: "Anthony Rivera",
-    title: "Senior Barber",
-    img: "./images/barber6.png",
-  },
+
 ];
 
 export default function EmployeeSection() {
   return (
-    <div className=" bg-white   flex relative overflow-hidden 
+    <div
+      className=" bg-white  pt-5  flex relative overflow-hidden  
+    flex-col
     xl:pt-30  xl:flex-row
     lg:flex-col lg:h-[120vh]
     sm:pt-10 sm:flex-col sm:gap-5 sm:h-[180vh]
-    ">
+    "
+    >
       {/* Pozadinska slika */}
       <motion.img
         src="./images/img1.jpg"
-        className="bottom-0 left-10 absolute lg:block sm:hidden"
+        className="bottom-0 left-10 absolute xl:block sm:hidden hidden"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
@@ -70,29 +62,40 @@ export default function EmployeeSection() {
         transition={{ duration: 0.8 }}
         viewport={{ once: true }}
       >
-        <span className="text-2xl uppercase text-primary 
+        <span
+          className="text-xl uppercase text-primary 
         md:text-xl
         sm:text-lg
-        ">Our Barbers</span>
-        <span className="text-6xl uppercase
+        "
+        >
+          Naši berberi
+        </span>
+        <span
+          className="text-3xl uppercase
          md:text-4xl
          sm:text-3xl
-        ">Meet Our Experts</span>
-        <span className="text-2xl 
+        "
+        >
+          Upoznajte naše stručnjake
+        </span>
+        <span
+          className="text-lg  font-inter
         
          md:text-xl
          sm:text-lg
-         ">
-          Our talented stylists blend tradition with innovation, using premium
-          products and advanced techniques to deliver cutting-edge styles.
+         "
+        >
+          Naši talentovani stilisti spajaju tradiciju i inovaciju, koristeći
+          vrhunske proizvode i napredne tehnike kako bi kreirali moderne i
+          precizne stilove.
         </span>
       </motion.div>
 
       {/* Desna strana - kartice */}
       <motion.div
-        className="flex-1 flex  gap-x-10 flex-wrap gap-y-0
+        className="flex-1 flex  gap-x-10 flex-wrap gap-y-0 w-full items-center justify-center mt-5
         xl:w-[75%] 
-        sm:w-full sm:justify-center sm:items-center 
+        sm:w-full sm:justify-center sm:items-center  mt-0
         "
         initial="hidden"
         whileInView="visible"
