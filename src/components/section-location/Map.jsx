@@ -4,7 +4,7 @@ import "leaflet/dist/leaflet.css";
 
 
 export default function MapWithOverlay() {
-    const position = [44.8176, 20.4569]; // Belgrade, Serbia (example)
+    const position = [43.98322853444558, 21.2511274201217]; // Belgrade, Serbia (example)
 
     return (
         <div className="relative w-full h-full overflow-hidden rounded-2xl ">

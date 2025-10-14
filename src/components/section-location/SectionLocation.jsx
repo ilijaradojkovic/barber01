@@ -134,7 +134,7 @@ export default function SectionLocation() {
               sm:text-sm
             "
             >
-              (325) 641-8294
+              Dimitrija Tucovica 72
             </span>
           </div>
         </motion.div>
@@ -180,7 +180,7 @@ export default function SectionLocation() {
                sm:text-sm
             "
             >
-              (325) 641-8294
+              (+381) 61 51307312
             </span>
           </div>
         </motion.div>
@@ -226,7 +226,7 @@ export default function SectionLocation() {
                sm:text-sm
             "
             >
-              (325) 641-8294
+              (+381) 61 51307312
             </span>
           </div>
         </motion.div>
